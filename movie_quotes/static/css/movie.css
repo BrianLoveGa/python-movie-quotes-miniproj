@@ -1,5 +1,59 @@
-body{
-    background-color: rgb(11, 181, 233);
-    margin: 5%;
-    
+body {
+	background-color: rgb(11, 181, 233);
+	margin: 5%;
+}
+
+form {
+	border-radius: 40px 0 40px 0;
+	width: 50%;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	margin: 5px 0 20px 0;
+	padding: 9px;
+	border: solid 1px black;
+	width: 300px;
+	background: whitesmoke;
+}
+
+a.delete {
+	width: auto;
+	padding: 15px 25px;
+	background-color: red;
+	border-radius: 9px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+a.delete:hover {
+	background-color: rgb(116, 44, 44);
+}
+
+a.edit {
+	width: auto;
+	padding: 8px 20px;
+	background-color: gray;
+	border-radius:20px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+a.edit:hover {
+	background-color: rgb(36, 22, 22);
+}
+
+a.home{
+
+
+}
+
+a.home:hover{
+
+
+}
+
+ul {
+  list-style-type: none;
 }
