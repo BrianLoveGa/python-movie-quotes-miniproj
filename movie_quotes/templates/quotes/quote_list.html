@@ -1,0 +1,12 @@
+{% extends 'quotes/base.html' %}
+
+{% block content %}
+
+<h2> list of movie quotes <a href="{% url 'quote_create' %}">(+NEW+)</a></h2>
+ <ul>
+{% for quote in quotes %}
+<li> Movie: {{quote.movie_title}} || Quote: <a href="{% url 'quote_detail' pk=quote.pk %}">{{quote.movie_quote}} </a></li>
+{% endfor %}
+ </ul>
+
+ {% endblock %}
