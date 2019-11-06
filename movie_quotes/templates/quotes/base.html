@@ -7,12 +7,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>BL Movie Quotes</title>
+		<script
+			src="https://kit.fontawesome.com/70784aaaa8.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="{% static 'css/movie.css' %}" />
 	</head>
 	<body>
 		<h1 class="big">Movie Quotes We Love</h1>
 		<nav>
-			<a class="home" href="{% url 'quote_list' %}">home</a>
+			<a class="home" href="{% url 'quote_list' %}">Quotes</a>
+			<a class="home" href="{% url 'movie_list' %}">Movies</a>
+			<a class="home" href="{% url 'quote_create' %}">ADD NEW Quote</a>
+			<a class="home" href="{% url 'movie_create' %}">ADD NEW Movie</a>
 		</nav>
 
 		{% block content %} {% endblock %}

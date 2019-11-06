@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h2> The awesome list of movie quotes ! <a href="{% url 'quote_create' %}">(+NEW+)</a></h2>
+<h2> The awesome list of movie quotes ! <a href="{% url 'quote_create' %}">(+NEW Quote+)</a></h2>
 <h3> Simply click the word Quote: beside the quote to see it's details</h3> 
 <ul>
 {% for quote in quotes %}
-<li> Movie: {{quote.movie_title}} ||  <a href="{% url 'quote_detail' pk=quote.pk %}"> Quote: </a>{{quote.movie_quote}}</li>
+<li> <h2><i class="fas fa-film"></i> Movie: {{quote.title}} <br></br>  <a class="q" href="{% url 'quote_detail' pk=quote.pk %}"> Quote: </a>{{quote.movie_quote}}</li></h2>
 {% endfor %}
  </ul>
 

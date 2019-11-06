@@ -2,14 +2,16 @@
 
 {% block content %}
 
-<h2> Movie Name : {{quote.movie_title}}  </h2>
-<h2> Link : <a href="{{quote.imbd_link}}" target="_blank" >click for offsite link</a> to the following address: {{quote.imbd_link}}</h2>
+<h2> Movie Name : {{quote.title}}  </h2>
+
 <h4> Edit This Quote : <a class="edit" href="{% url 'quote_edit' pk=quote.pk %}"> CLICK HERE 2 EDIT</a> </h4>
-<h2> When was it ? {{quote.movie_release_year}} </h2>
+<!-- <h2> When was it ? {{movie.movie_release_year}} </h2> -->
 <h2> What was it ? {{quote.movie_quote}} </h2>
-<h3>here's a poster or pic from  the movie</h3>
-<img src="{{quote.movie_poster}}" alt="{{quote.movie_title}}">
+<!-- <h3>here's a poster or pic from the movie click it for an offsite link</h3>
+<h2>to the following address: {{movie.imbd_link}}</h2>
+<a href="{{movie.imbd_link}}" target="_blank" >
+<img src="{{movie.movie_poster}}" alt="{{quote.movie_title}}"></a> -->
 <br></br>
-<a class="delete" href="{% url 'quote_delete' pk=quote.pk %}">Delete Me</a>
+<a class="delete" href="{% url 'quote_delete' pk=quote.pk %}">Delete Quote</a>
 
  {% endblock %}

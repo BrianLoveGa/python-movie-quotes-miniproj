@@ -1,0 +1,17 @@
+{% extends 'quotes/base.html' %}
+
+{% block content %}
+
+<h2> Movie Name : {{quote.movie_title}}  </h2>
+
+<h4> Edit This Movie : <a class="edit" href="{% url 'movie_edit' pk=movie.pk %}"> CLICK HERE 2 EDIT</a> </h4>
+<h2> When was it ? {{movie.movie_release_year}} </h2>
+
+<h3>here's a poster or pic from the movie click it for an offsite link</h3>
+<h2>to the following address: {{movie.imbd_link}}</h2>
+<a href="{{movie.imbd_link}}" target="_blank" >
+<img src="{{movie.movie_poster}}" alt="{{quote.movie_title}}"></a>
+<br></br>
+<a class="delete" href="{% url 'movie_delete' pk=movie.pk %}">Delete Movie</a>
+
+ {% endblock %}

@@ -17,6 +17,23 @@ input {
 	width: 300px;
 	background: whitesmoke;
 }
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a.q{
+    margin:5% 3% 5% 8%;
+
+
+}
+
+a.q:hover{
+    background-color: black;
+    color:white;
+
+
+}
 
 a.delete {
 	width: auto;
@@ -28,32 +45,69 @@ a.delete {
 }
 
 a.delete:hover {
-	background-color: rgb(116, 44, 44);
+    background-color: rgb(116, 44, 44);
+    cursor: crosshair;
 }
 
 a.edit {
 	width: auto;
 	padding: 8px 20px;
 	background-color: gray;
-	border-radius:20px;
+	border-radius: 20px;
 	font-size: 18px;
 	color: #ffffff;
 }
 
 a.edit:hover {
-	background-color: rgb(36, 22, 22);
+    background-color: rgb(36, 22, 22);
+    cursor: crosshair;
 }
 
-a.home{
-
-
+a.home {
+	width: auto;
+	padding: 8px 20px;
+	background-color: rgb(2, 87, 44);
+	border-radius: 20px;
+	font-size: 18px;
+	color: #ffffff;
 }
 
-a.home:hover{
+a.home:hover {
+    background-color: rgb(2, 53, 28);
+    cursor: crosshair;
+}
 
+a.link {
+	width: auto;
+	padding: 8px 20px;
+	background-color: rgb(22, 3, 129);
+	border-radius: 20px;
+	font-size: 18px;
+	color: #ffffff;
+}
 
+a.link:hover {
+    background-color: rgb(82, 75, 179);
+    cursor: crosshair;
+    
 }
 
 ul {
-  list-style-type: none;
+	list-style-type: none;
+}
+
+button.save {
+	width: auto;
+	padding: 8px 20px;
+	background-color: rgb(216, 30, 176);
+	border-radius: 20px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+button.save:hover{
+
+    background-color: rgb(176, 13, 109);
+    cursor: crosshair;
+
 }
