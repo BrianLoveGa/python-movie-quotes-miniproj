@@ -44,13 +44,17 @@ h3 {
 h4 {
 	font-size: 30px;
 }
-h5{
+h5 {
 	font-size: 20px;
 }
 
 nav {
 	text-align: center;
-	padding: 0 40px;
+	padding: 10px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin:10%
 }
 
 .mid,
@@ -163,12 +167,12 @@ a.link:hover {
 
 a.midlink {
 	width: auto;
-	padding: 18px 20px;
+	padding: 8px 10px;
 	background-color: rgb(22, 3, 129);
 	border-radius: 20px;
 	font-size: 18px;
 	color: #ffffff;
-	margin: 15% 42%;
+	margin: 15% 32%;
 }
 a.midlink:hover {
 	background-color: rgb(82, 75, 179);
@@ -207,8 +211,8 @@ ul.error {
 	background-color: white;
 	border-radius: 20px;
 	border: black 3px solid;
-	padding:10px;
-	text-align:center;
+	padding: 10px;
+	text-align: center;
 }
 
 /* li.error {
@@ -260,6 +264,15 @@ ul.error {
 	}
 	select {
 		font-size: 15px;
+	}
+	a.midlink {
+		width: auto;
+		padding: 2px 5px;
+		background-color: rgb(22, 3, 129);
+		border-radius: 20px;
+		font-size: 15px;
+		color: #ffffff;
+		margin: 5% 12%;
 	}
 	input {
 		display: block;
