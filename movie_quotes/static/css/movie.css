@@ -3,11 +3,38 @@ body {
 	margin: 5%;
 }
 
-.big {
+h1.big {
 	font-size: 60px;
 	text-align: center;
-	color: white;
+	color: rgb(206, 31, 31);
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+	letter-spacing: 6px;
 }
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px rgb(253, 198, 198), 0 0 30px #f1a0c9,
+			0 0 40px #ec6dad, 0 0 50px #f059a4, 0 0 60px #e92989, 0 0 70px #e60073;
+	}
+	to {
+		text-shadow: 0 0 20px rgb(255, 227, 227), 0 0 30px #f7abd1, 0 0 40px #f789c0,
+			0 0 50px #fe66b2, 0 0 60px #ff4da6, 0 0 70px #fc2d94, 0 0 80px #fa0580;
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+			0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+			0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+}
+
 h2 {
 	font-size: 40px;
 }
@@ -20,6 +47,7 @@ h4 {
 
 nav {
 	text-align: center;
+	padding: 0 40px;
 }
 
 .mid,
@@ -105,7 +133,7 @@ a.edit:hover {
 
 a.home {
 	width: auto;
-	padding: 8px 20px;
+	padding: 8px 25px;
 	background-color: rgb(2, 87, 44);
 	border-radius: 20px;
 	font-size: 18px;
@@ -131,6 +159,20 @@ a.link:hover {
 	cursor: crosshair;
 }
 
+a.midlink {
+	width: auto;
+	padding: 18px 20px;
+	background-color: rgb(22, 3, 129);
+	border-radius: 20px;
+	font-size: 18px;
+	color: #ffffff;
+	margin:15% 42%;
+}
+a.midlink:hover {
+	background-color: rgb(82, 75, 179);
+	cursor: crosshair;
+}
+
 img.mov_thtr {
 	width: 100%;
 }
@@ -151,6 +193,10 @@ button.save {
 button.save:hover {
 	background-color: rgb(176, 13, 109);
 	cursor: crosshair;
+}
+
+.move {
+	margin: 5% 42%;
 }
 
 /* small screens */

@@ -13,10 +13,10 @@
     </li></h2>
 {% endfor %}
  </ul>
-<h3>here's a poster or pic from the movie click it for an offsite link</h3>
-<h2>to the following address: {{movie.imbd_link}}</h2>
+<h2>here's a poster or pic from the movie click it for an offsite link</h2>
+<h3>to the following address: {{movie.imbd_link}}</h3>
 <a href="{{movie.imbd_link}}" target="_blank" >
-<img src="{{movie.movie_poster}}" alt="{{movie.movie_title}}"></a>
+<img class="move" src="{{movie.movie_poster}}" alt="{{movie.movie_title}}"></a>
 <br></br>
 <a class="delete" href="{% url 'movie_delete' pk=movie.pk %}">Delete Movie</a>
 
