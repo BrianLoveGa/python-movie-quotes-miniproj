@@ -85,19 +85,19 @@ def quote_edit(request, pk):
             return redirect("quote_detail", pk=quote.pk)
     else:
         form = QuoteForm(instance=quote)
-        return render(request, "quotes/quote_form.html", {"form": form})
+    return render(request, "quotes/quote_form.html", {"form": form})
 
 
 def movie_edit(request, pk):
     movie = Movie.objects.get(pk=pk)
     if request.method == "POST":
         form = MovieForm(request.POST, instance=movie)
-        if form.is_valid:
+        if form.is_valid():
             movie = form.save()
             return redirect("movie_detail", pk=movie.pk)
     else:
         form = MovieForm(instance=movie)
-        return render(request, "movies/movie_form.html", {"form": form})
+    return render(request, "movies/movie_form.html", {"form": form})
 
 
 # delete it
