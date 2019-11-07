@@ -1,0 +1,6 @@
+python
+
+django
+
+
+knowledge of what to actually put here
