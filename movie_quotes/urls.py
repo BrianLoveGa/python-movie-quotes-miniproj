@@ -13,4 +13,5 @@ urlpatterns = [
     path('movies/new', views.movie_create, name='movie_create'),
     path('movies/<int:pk>/edit', views.movie_edit, name='movie_edit'),
     path('movies/<int:pk>/delete', views.movie_delete, name='movie_delete'),
+    path("home/", views.home, name='home'),
 ]

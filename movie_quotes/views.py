@@ -4,17 +4,24 @@ from .forms import QuoteForm, MovieForm
 
 # Create your views here.
 
+def home(request):
+    return render(request, "quotes/home.html",)
+
 # basic list view
+# https://stackoverflow.com/questions/5250276/how-to-render-an-ordered-dictionary-in-django-templates
+# {"movies": sorted(movies.movie_title())} )
 
 
 def quote_list(request):
     quotes = Quote.objects.all()
-    return render(request, "quotes/quote_list.html", {"quotes": quotes})
+    # movies = Movie.objects.all() ...   ####   {"movies": movies},
+    return render(request, "quotes/quote_list.html", {"quotes": quotes} )
 
 
 def movie_list(request):
     movies = Movie.objects.all()
-    return render(request, "movies/movie_list.html", {"movies": movies})
+    #quotes = Quote.objects.all() ... and ####  {"quotes": quotes}
+    return render(request, "movies/movie_list.html", {"movies": movies} )
 
 
 # detail view of an item
@@ -22,11 +29,13 @@ def movie_list(request):
 
 def quote_detail(request, pk):
     quote = Quote.objects.get(id=pk)
+    
     return render(request, "quotes/quote_detail.html", {"quote": quote})
 
 
 def movie_detail(request, pk):
     movie = Movie.objects.get(id=pk)
+    
     return render(request, "movies/movie_detail.html", {"movie": movie})
 
 
