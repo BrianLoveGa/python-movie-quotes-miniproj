@@ -2,9 +2,11 @@
 
 <h2 class="mid">Add a NEW Movie HERE or EDIT an exisitng one</h2>
 {% if form.errors %}
-  <ul>
-    {% for error in form.errors %} 
-      <li>{{ error }}</li>
+  <ul class='error'>
+	{% for error in form.errors %} 
+	<h5>You got some typos there pal</h3>
+	  <li class='err'>{{ error }}</li>
+	  <h5> look below for details on the errors listed above</h5>
     {% endfor %}
   </ul>
 {% endif %}  

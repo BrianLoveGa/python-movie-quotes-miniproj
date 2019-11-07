@@ -44,6 +44,9 @@ h3 {
 h4 {
 	font-size: 30px;
 }
+h5{
+	font-size: 20px;
+}
 
 nav {
 	text-align: center;
@@ -165,7 +168,7 @@ a.midlink {
 	border-radius: 20px;
 	font-size: 18px;
 	color: #ffffff;
-	margin:15% 42%;
+	margin: 15% 42%;
 }
 a.midlink:hover {
 	background-color: rgb(82, 75, 179);
@@ -197,6 +200,24 @@ button.save:hover {
 .move {
 	margin: 5% 42%;
 }
+
+ul.error {
+	font-size: 20px;
+	color: red;
+	background-color: white;
+	border-radius: 20px;
+	border: black 3px solid;
+	padding:10px;
+	text-align:center;
+}
+
+/* li.error {
+	font-size: 30px;
+	color: rgb(163, 3, 3);
+	background-color: rgb(243, 143, 235);
+	border-radius: 50px;
+	border: black 6px solid;
+} */
 
 /* small screens */
 

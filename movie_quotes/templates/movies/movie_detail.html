@@ -2,7 +2,7 @@
 {% block content %}
 <h2> Movie Name : {{movie.movie_title}}  </h2>
 <h4> Edit This Movie : <a class="edit" href="{% url 'movie_edit' pk=movie.pk %}"> CLICK HERE 2 EDIT</a> </h4>
-<h2> When was it ? {{movie.movie_release_year}} </h2>
+<h2> <i class="fas fa-history"></i>When was it ? {{movie.movie_release_year}} </h2>
 <ul>
 {% for quote in movie.quotes.all %}
 <li> <h2><i class="fas fa-film"></i> Movie: {{quote.title.movie_title}} <br></br>
@@ -13,8 +13,8 @@
     </li></h2>
 {% endfor %}
  </ul>
-<h2>here's a poster or pic from the movie click it for an offsite link</h2>
-<h3>to the following address: {{movie.imbd_link}}</h3>
+<h5 class="mid">below there's a poster or pic click it to visit: {{movie.imbd_link}} </h5>
+
 <a href="{{movie.imbd_link}}" target="_blank" >
 <img class="move" src="{{movie.movie_poster}}" alt="{{movie.movie_title}}"></a>
 <br></br>
