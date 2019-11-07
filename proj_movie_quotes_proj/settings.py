@@ -18,8 +18,10 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,7 +37,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["0.0.0.0", "localhost", "127.0.0.1", "bl-movie-quotes-appgasei.herokuapp.com"]
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+
+SECRET_KEY = "@z2+h@matrix_pur4_guk8n8^%0ebgc%$*CODE5zfkl5wut2nq"
+
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
@@ -50,6 +54,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_extensions",
     "whitenoise.runserver_nostatic",
+     'django_generate_secret_key',
     "movie_quotes",
 ]
 
@@ -115,6 +120,10 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
 ]
 
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -135,9 +144,9 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 #location where django collect all static files
-STATIC_ROOT = os.path.join(proj_movie_quotes_proj,'static')
+STATIC_ROOT = os.path.join('python-movie-quotes-miniproj','static')
 # location where you will store your static files
-STATICFILES_DIRS = [os.path.join(proj_movie_quotes_proj,'movie_quotes/static')
+STATICFILES_DIRS = [os.path.join('proj_movie_quotes_proj','movie_quotes/static')
 ]
 
 
