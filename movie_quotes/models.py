@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-
+## git add content
 
 class Movie(models.Model):
     movie_title = models.CharField(default="movie title", max_length=100)
