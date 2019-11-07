@@ -12,6 +12,8 @@ class Movie(models.Model):
     def __str__(self):
         return self.movie_title
 
+Movie.objects.order_by('movie_title')
+
 
 class Quote(models.Model):
     title = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='quotes')
@@ -20,3 +22,5 @@ class Quote(models.Model):
 
     def __str__(self):
         return self.movie_quote
+
+Quote.objects.order_by('title')

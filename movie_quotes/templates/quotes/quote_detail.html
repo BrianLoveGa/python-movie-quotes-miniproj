@@ -12,4 +12,7 @@
 <br></br>
 <a class="delete" href="{% url 'quote_delete' pk=quote.pk %}">Delete Quote</a>
 
+<h2> year : {{quote.title.movie_release_year}}</h2>
+<img src="{{quote.title.movie_poster}}" alt="{{quote.title}}"></a>
+
  {% endblock %}
