@@ -2,8 +2,7 @@
 
 {% block content %}
 
-<h2> The awesome list of movie quotes ! <a href="{% url 'movie_create' %}">(+NEW Movie+)</a>
-    <a href="{% url 'quote_create' %}">(+NEW Quote+)</a></h2>
+<h2> The awesome list of movie quotes !</h2>
 <h3> Simply click the movie title to see more details</h3> 
 <ul>
 {% for movie in movies %}
