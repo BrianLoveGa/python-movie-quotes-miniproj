@@ -6,7 +6,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+#deploy the other branch
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
